@@ -12,3 +12,6 @@ Entrada ubicada a la categoria
         <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> 
     {% endfor %}
 {% endif %}
+{% if article.updated %}
+    (Darrera modificació: <b> {{ article.updated }} </b>)
+{% endif %}
