@@ -55,12 +55,28 @@
 	<div class="container-fluid">
 	  <div class="sidebar">
 		<div class="well">
+            <h3>Categories</h3>
+            <ul>
+                {% for cat, null in categories %}
+					<li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+				{% endfor %}
+            </ul>
+            <h3>Tags</h3>
+            <ul>
+                {% for tag, null in tags %}
+					<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+				{% endfor %}
+            </ul>
+
+            <!--
 			<h3>Blogroll</h3>
 			<ul>
 				{% for name, link in LINKS %}
 				<li><a href="{{ link }}">{{ name }}</a></li>
 				{% endfor %}
 			</ul>
+            -->
+            <!--
 			<div class="social">
 			<h3>Social</h3>
 			<ul>
@@ -69,8 +85,10 @@
 				{% endfor %}
 			</ul>
 			</div>
+            -->
 		</div>
 	  </div>
+
 	  <div class="content">
 			{% block indextitle %}<div class="page-header"><h1>{% block title %} {{ self.windowtitle() }} {% endblock %}</h1></div>{% endblock %}
 			{% block content %}{% endblock %}
