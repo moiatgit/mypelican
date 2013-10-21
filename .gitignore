@@ -1,0 +1,7 @@
+myinfo.py
+*.pyc
+*~
+content/
+output/
+
+
