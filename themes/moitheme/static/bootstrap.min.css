@@ -32,7 +32,6 @@ img {
     border:1px solid #ccc;
     background-color:#fff;
 }
-img.inline {}
 /* img{border:0;-ms-interpolation-mode:bicubic;} */
 button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
 button,input{line-height:normal;*overflow:visible;}
