@@ -140,14 +140,14 @@ code{
     padding:1px 3px;
 }
 pre{
-    background-color:#c0c0c0;
+    /* background-color:#c0c0c0; */
     display:block;
     padding:8.5px;
     margin:0 0 18px;
     line-height:18px;
     font-size:12px;
     border:1px solid #ccc;
-    border:1px solid rgba(0, 0, 0, 0.15);
+    /* border:1px solid rgba(0, 0, 0, 0.15); */
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:3px;
