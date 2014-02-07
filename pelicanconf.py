@@ -52,3 +52,4 @@ DEFAULT_DATE_FORMAT = '%d/%m/%Y'
 USE_FOLDER_AS_CATEGORY = True
 STATIC_PATHS = ["images", ]
 THEME = "themes/moitheme"
+
