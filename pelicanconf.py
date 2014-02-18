@@ -50,6 +50,6 @@ DEFAULT_DATE_FORMAT = '%d/%m/%Y'
 # subfolder will become the category of your post. If set to False,
 # DEFAULT_CATEGORY will be used as a fallback.
 USE_FOLDER_AS_CATEGORY = True
-STATIC_PATHS = ["images", ]
+STATIC_PATHS = ["images", "resources", ]
 THEME = "themes/moitheme"
 
