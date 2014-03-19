@@ -53,3 +53,7 @@ USE_FOLDER_AS_CATEGORY = True
 STATIC_PATHS = ["images", "resources", ]
 THEME = "themes/moitheme"
 
+# Plugings: 
+PLUGIN_PATH = '//home/moi/lib/pelican-plugins/'
+PLUGINS = ['metaslug']
+

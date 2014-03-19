@@ -1,0 +1,21 @@
+{% if article.prev_slug or article.next_slug %}
+<ul id="navigation"> 
+    {% if article.prev_slug %}
+    <li class="navigation-prev">
+    <a href="{{ SITEURL }}/{{ article.prev_slug }}">
+        {{ article.prev_title }}
+    </a>
+    </li>
+    {% endif %}
+
+    {% if article.next_slug %}
+    <li class="navigation-next">
+    <a href="{{ SITEURL }}/{{ article.next_slug }}">
+        {{ article.next_title }}
+    </a>
+    </li>
+    {% endif %}
+</ul> 
+
+{% endif %}
+
