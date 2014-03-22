@@ -55,5 +55,5 @@ THEME = "themes/moitheme"
 
 # Plugings: 
 PLUGIN_PATH = '//home/moi/lib/pelican-plugins/'
-PLUGINS = ['metaslug']
+PLUGINS = ['navigationprevnext']
 
