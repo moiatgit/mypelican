@@ -1,16 +1,16 @@
-{% if article.prev_slug or article.next_slug %}
+{% if article.prev_url or article.next_url %}
 <ul id="navigation"> 
-    {% if article.prev_slug %}
+    {% if article.prev_url %}
     <li class="navigation-prev">
-    <a href="{{ SITEURL }}/{{ article.prev_slug }}">
+    <a href="{{ SITEURL }}/{{ article.prev_url }}">
         {{ article.prev_title }}
     </a>
     </li>
     {% endif %}
 
-    {% if article.next_slug %}
+    {% if article.next_url %}
     <li class="navigation-next">
-    <a href="{{ SITEURL }}/{{ article.next_slug }}">
+    <a href="{{ SITEURL }}/{{ article.next_url }}">
         {{ article.next_title }}
     </a>
     </li>
