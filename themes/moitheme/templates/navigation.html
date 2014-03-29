@@ -1,4 +1,5 @@
 {% if article.prev_url or article.next_url %}
+<div class="well small">
 <ul id="navigation"> 
     {% if article.prev_url %}
     <li class="navigation-prev">
@@ -16,6 +17,6 @@
     </li>
     {% endif %}
 </ul> 
-
+</div>
 {% endif %}
 
