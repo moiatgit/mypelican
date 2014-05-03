@@ -570,3 +570,5 @@ pre span.lineno {
     text-align : right;
 }
 
+/* added to distinguish active item */
+li.active { color: blue; }
