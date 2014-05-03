@@ -570,5 +570,17 @@ pre span.lineno {
     text-align : right;
 }
 
+#navigation .navigation-top a:before {
+    content: "^^^"
+}
+#navigation .navigation-top a:after {
+    content: "^^^"
+}
+#navigation .navigation-top a { 
+    padding-right : 80px;
+    text-align : center;
+    color: red;
+}
+
 /* added to distinguish active item */
 li.active { color: blue; }

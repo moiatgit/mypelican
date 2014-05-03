@@ -1,18 +1,22 @@
-Entrada ubicada a la categoria
-<a href="{{ SITEURL }}/{{ article.category.url }}">
-    {{ article.category }}
-</a>
-{% if article.tags %}
-    {% if article.tags | length == 1 %}
-        amb el tag:
-    {% else %}
-        amb els tags: 
+{% if article.category.name != "temes" %}
+<div class="well small">
+    Entrada ubicada a la categoria
+    <a href="{{ SITEURL }}/{{ article.category.url }}">
+        {{ article.category }}
+    </a>
+    {% if article.tags %}
+        {% if article.tags | length == 1 %}
+            amb el tag:
+        {% else %}
+            amb els tags: 
+        {% endif %}
+        {% for tag in article.tags %}
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> 
+        {% endfor %}
     {% endif %}
-    {% for tag in article.tags %}
-    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> 
-    {% endfor %}
-{% endif %}
-{% if article.updated %}
-    (Darrera modificació: <b> {{ article.updated }} </b>)
+    {% if article.updated %}
+        (Darrera modificació: <b> {{ article.updated }} </b>)
+    {% endif %}
+</div>
 {% endif %}
 

@@ -9,6 +9,14 @@
     </li>
     {% endif %}
 
+    {% if article.top_url %}
+    <li class="navigation-top">
+    <a href="{{ SITEURL }}/{{ article.top_url }}">
+        {{ article.top_title }}
+    </a>
+    </li>
+    {% endif %}
+
     {% if article.next_url %}
     <li class="navigation-next">
     <a href="{{ SITEURL }}/{{ article.next_url }}">
