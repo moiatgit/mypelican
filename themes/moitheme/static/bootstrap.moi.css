@@ -587,32 +587,41 @@ td.code div.highlight pre {
 #navigation li { display : inline } 
 
 #navigation .navigation-prev a { 
+    width:33%;float:left;text-align:left;
+    /*
     float : left;
     padding-left : 20px;
+    */
 } 
 
 #navigation .navigation-prev a:before {
-    content: "<<<";
+    content: "←";
 }
 #navigation .navigation-next a:after {
-    content: ">>>";
+    content: "→";
 }
 #navigation .navigation-next a { 
+    width:33%;float:right;text-align:right;
+    /*
     float : right;
     padding-right : 20px;
     text-align : right;
+    */
 }
 
 #navigation .navigation-top a:before {
-    content: "^^^"
+    content: "↑"
 }
 #navigation .navigation-top a:after {
-    content: "^^^"
+    content: "↑"
 }
 #navigation .navigation-top a { 
+    width:33%;float:left;text-align:center;
+    /*
     padding-right : 80px;
     text-align : center;
     color: red;
+    */
 }
 
 /* added to distinguish active item */
